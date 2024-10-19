@@ -5,7 +5,40 @@
     <meta name="theme-color" content="#0ca157"/>
     <title>Is Jet Set Radio 3 Out Yet???</title>
     <link rel="icon" type="image/x-icon" href="jetsetradio.png">
-    <link rel="stylesheet" href="styles.css">
+
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #0ca157, #5da82e);
+        background-size: 400% 400%;
+        animation: gradientShift 8s ease infinite;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+
+      .no {
+        font-size: 10vw;
+        color: #000000;
+        margin: 0;
+      }
+
+      .counter {
+        font-size: 2vw;
+        color: #000000;
+        margin-top: 5px;
+      }
+
+      @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+    </style>
   </head>
   <body>
     <header></header>
@@ -16,7 +49,7 @@
     <footer></footer>
 
     <script>
-      // Function to calculate the difference in days
+      // function to calculate the difference in days
       function calculateDaysSinceAnnouncement() {
         const announcementDate = new Date('2023-12-08');
         const today = new Date();
