@@ -15,7 +15,6 @@ body {
 .no {
   font-size: 10vw;
   color: #000000;
-  animation: bounce 2s infinite alternate;
   margin: 0;
 }
 
